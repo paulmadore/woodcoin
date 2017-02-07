@@ -1,0 +1,63 @@
+cd /home/phm/Downloads/woodcoin/src/leveldb && CC=gcc CXX=g++ make OPT="-m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2" libleveldb.a libmemenv.a
+make[1]: Entering directory '/home/phm/Downloads/woodcoin/src/leveldb'
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/builder.cc -o db/builder.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/c.cc -o db/c.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/dbformat.cc -o db/dbformat.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/db_impl.cc -o db/db_impl.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/db_iter.cc -o db/db_iter.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/filename.cc -o db/filename.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/log_reader.cc -o db/log_reader.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/log_writer.cc -o db/log_writer.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/memtable.cc -o db/memtable.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/repair.cc -o db/repair.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/table_cache.cc -o db/table_cache.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/version_edit.cc -o db/version_edit.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/version_set.cc -o db/version_set.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c db/write_batch.cc -o db/write_batch.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c table/block_builder.cc -o table/block_builder.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c table/block.cc -o table/block.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c table/filter_block.cc -o table/filter_block.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c table/format.cc -o table/format.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c table/iterator.cc -o table/iterator.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c table/merger.cc -o table/merger.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c table/table_builder.cc -o table/table_builder.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c table/table.cc -o table/table.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c table/two_level_iterator.cc -o table/two_level_iterator.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/arena.cc -o util/arena.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/bloom.cc -o util/bloom.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/cache.cc -o util/cache.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/coding.cc -o util/coding.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/comparator.cc -o util/comparator.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/crc32c.cc -o util/crc32c.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/env.cc -o util/env.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/env_posix.cc -o util/env_posix.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/env_win.cc -o util/env_win.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/filter_policy.cc -o util/filter_policy.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/hash.cc -o util/hash.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/histogram.cc -o util/histogram.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/logging.cc -o util/logging.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/options.cc -o util/options.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c util/status.cc -o util/status.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c port/port_posix.cc -o port/port_posix.o
+rm -f libleveldb.a
+ar -rs libleveldb.a db/builder.o db/c.o db/dbformat.o db/db_impl.o db/db_iter.o db/filename.o db/log_reader.o db/log_writer.o db/memtable.o db/repair.o db/table_cache.o db/version_edit.o db/version_set.o db/write_batch.o table/block_builder.o table/block.o table/filter_block.o table/format.o table/iterator.o table/merger.o table/table_builder.o table/table.o table/two_level_iterator.o util/arena.o util/bloom.o util/cache.o util/coding.o util/comparator.o util/crc32c.o util/env.o util/env_posix.o util/env_win.o util/filter_policy.o util/hash.o util/histogram.o util/logging.o util/options.o util/status.o port/port_posix.o
+g++ -I. -I./include -fno-builtin-memcmp -pthread -DOS_LINUX -DLEVELDB_PLATFORM_POSIX -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -c helpers/memenv/memenv.cc -o helpers/memenv/memenv.o
+rm -f libmemenv.a
+ar -rs libmemenv.a helpers/memenv/memenv.o
+make[1]: Leaving directory '/home/phm/Downloads/woodcoin/src/leveldb'
+cd /home/phm/Downloads/woodcoin; /bin/sh share/genbuild.sh /home/phm/Downloads/woodcoin/build/build.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/sendcoinsdialog.ui -o build/ui_sendcoinsdialog.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/coincontroldialog.ui -o build/ui_coincontroldialog.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/addressbookpage.ui -o build/ui_addressbookpage.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/signverifymessagedialog.ui -o build/ui_signverifymessagedialog.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/aboutdialog.ui -o build/ui_aboutdialog.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/editaddressdialog.ui -o build/ui_editaddressdialog.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/transactiondescdialog.ui -o build/ui_transactiondescdialog.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/overviewpage.ui -o build/ui_overviewpage.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/sendcoinsentry.ui -o build/ui_sendcoinsentry.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/askpassphrasedialog.ui -o build/ui_askpassphrasedialog.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/rpcconsole.ui -o build/ui_rpcconsole.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/optionsdialog.ui -o build/ui_optionsdialog.h
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic src/qt/forms/paperwalletdialog.ui -o build/ui_paperwalletdialog.h
+g++ -c -m64 -pipe -fstack-protector-all -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -O2 -D_REENTRANT -fdiagnostics-show-option -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -Wstack-protector -fPIC -DQT_GUI -DBOOST_THREAD_USE_LIB -DBOOST_SPIRIT_THREADSAFE -DUSE_UPNP=1 -DSTATICLIB -DUSE_IPV6=1 -DHAVE_BUILD_INFO -DLINUX -D_FILE_OFFSET_BITS=64 -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -Isrc -Isrc/json -Isrc/qt -Isrc/leveldb/include -Isrc/leveldb/helpers -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -Ibuild -Ibuild -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -o build/bitcoin.o src/qt/bitcoin.cpp
+Makefile:1215: recipe for target 'build/bitcoin.o' failed
